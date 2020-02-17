@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.example.csvreader.EmployeeRestControllerIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.364 s <<< FAILURE! - in com.example.csvreader.EmployeeRestControllerIntegrationTest
+employeeSal  Time elapsed: 0.154 s  <<< FAILURE!
+java.lang.AssertionError: No value at JSON path "$.name"
+	at com.example.csvreader.EmployeeRestControllerIntegrationTest.employeeSal(EmployeeRestControllerIntegrationTest.java:52)
+Caused by: com.jayway.jsonpath.PathNotFoundException: Expected to find an object with property ['name'] in path $ but found 'net.minidev.json.JSONArray'. This is not a json object according to the JsonProvider: 'com.jayway.jsonpath.spi.json.JsonSmartJsonProvider'.
+	at com.example.csvreader.EmployeeRestControllerIntegrationTest.employeeSal(EmployeeRestControllerIntegrationTest.java:52)
+
